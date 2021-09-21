@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eef4f4;
+    overflow: hidden;
+}
+.container:before {
+    content: "";
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    top: -10%;
+    right: 48%;
+    background-image: linear-gradient(-45deg, #052425 0%, #a6bdbb 100%);
+    transition: 3.8s ease-in-out;
+    border-radius: 50%;
+    z-index: 1;
+  }
+.forms-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.signin .register{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: 1s 0.7s ease-in-out;
+}
+.signin-mode .register-mode {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    width: 50%;
+
+}
+.find-id-pw{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+.find-id{
+    border-radius:30px;
+    margin-right: 15px;
+    padding:10px;
+    background-color: #eec877;
+    color: black;
+    transition: 0.3s;
+}
+.find-id:hover{
+    background-color: #f0daaf;
+}
+.find-pw{
+    margin-left: 15px;
+    border-radius:30px;
+    padding:10px;
+    background-color: #eec877;
+    color: black;
+    transition: 0.3s;
+}
+.find-pw:hover{
+    background-color: #f0daaf;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 5rem;
+    transition: all 0.2s 0.7s;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+form.register-form{
+    left: 20%;
+    z-index: 2;
+}
+form.signin-form{
+    z-index: 2;
+    left: 20%;
+}
+.title{
+    font-size: 2.2rem;
+    color: #052425;
+    margin-bottom:10px;
+}
+.input-field{
+    max-width: 380px;
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    margin:10px 0;
+    border-radius: 55px;
+    display:grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+
+}
+.icon{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top:5px;
+    color: #052425;
+}
+.input-field input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #3f595b;
+
+}
+.input-field input::placeholder{
+    color: #a6bdbb;
+}
+.btn{
+    width:150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius:20px;
+    background-color:#3f595b;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    margin:10px 0;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #85afaa;
+
+}
+.pw-error{
+    color: red;
+}
+.error{
+    color: red;
+}
+.social-text {
+    padding: 0.7rem 0;
+    font-size: 1rem;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    
+  }
+  .social-icon {
+    height: 46px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    color: #3f595b;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: 0.3s;
+  }
+  .social-icon:hover {
+    color: #85afaa;
+  }
+
+  .image {
+    z-index: 2;
+    width: 40%;
+  }
+.right-img{
+    padding: 10px;
+    width:30%;
+}
+.panel {
+display: flex;
+flex-direction: column;
+}
+.left-panel {
+pointer-events: all;
+padding: 3rem 17% 2rem 0%;
+}
+.left-panel .content{
+    padding-top: 7%;
+    padding-left: 17%;
+    pointer-events: all;
+    z-index: 2;
+  }
+  
+  .right-panel {
+      padding-top: 8%;
+    pointer-events: all;
+    z-index: 2;
+  }
+  .right-panel .content {
+    color: #000;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.6s;
+    z-index: 2;
+    padding-left: 2%;
+
+  }
+  
+  .left-panel  h2 {
+    line-height: 1;
+    font-size: 5rem;
+    color: #e4f1f1;
+    margin-right: 30px;
+  }
+  .right-panel  h2 {
+    line-height: 1;
+    font-size: 4rem;
+    color: rgb(253, 226, 75);
+  }
+  .btn.transparent {
+    display: inline-block;
+    background: none;
+    border: 2.3px solid #fff;
+    width: 130px;
+    height: 41px;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    z-index: 2;
+  }
